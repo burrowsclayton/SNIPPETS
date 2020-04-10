@@ -8,13 +8,40 @@ Initial Steps:
     brew upgrade hub
     brew upgrade git
     git config --global hub.protocol https
-2.
 
 Steps for settings a Git repo with Github:
 # create a repo to host a new project on GitHub
-git init
-git add .
-git commit -m "And so, it begins."
-hub create
-→ (creates a new GitHub repository with the name of the current directory)
-git push -u origin HEAD
+    git init
+    git add .
+    git commit -m "And so, it begins."
+    hub create # → (creates a new GitHub repository with the name of the current directory)
+    git push -u origin HEAD
+
+
+Example Steps for getting an existing repo:
+# clone your own project
+hub clone dotfiles
+→ git clone git://github.com/YOUR_USER/dotfiles.git
+
+# clone another project
+hub clone github/hub
+→ git clone git://github.com/github/hub.git
+
+# fast-forward all local branches to match the latest state on the remote
+cd myproject
+hub sync
+
+# list latest open issues in the current repository
+hub issue --limit 10
+
+# open the current project's issues page
+hub browse -- issues
+→ open https://github.com/github/hub/issues
+
+# open another project's wiki
+hub browse rbenv/ruby-build wiki
+→ open https://github.com/rbenv/ruby-build/wiki
+
+# share log output via Gist
+hub gist create --copy build.log
+→ (the URL of the new private gist copied to clipboard)
