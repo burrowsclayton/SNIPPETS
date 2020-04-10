@@ -1,0 +1,20 @@
+
+Helpful Links:
+https://hub.github.com
+https://hub.github.com/hub-remote.1.html
+
+Initial Steps:
+1. Make sure that `hub` is up to date and setup correctly:
+    brew upgrade hub
+    brew upgrade git
+    git config --global hub.protocol https
+2.
+
+Steps for settings a Git repo with Github:
+# create a repo to host a new project on GitHub
+git init
+git add .
+git commit -m "And so, it begins."
+hub create
+→ (creates a new GitHub repository with the name of the current directory)
+git push -u origin HEAD

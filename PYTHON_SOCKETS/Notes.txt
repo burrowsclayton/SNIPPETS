@@ -1,0 +1,26 @@
+https://github.com/realpython/materials/tree/master/python-sockets-tutorial
+
+1. Client sends a header
+2. Server makes a request id and stores that information
+3. Server sends id and other instructions back to header
+4. Client sends object to server
+5. Server sends header to client
+6. Client notifies server that header is recieved
+7. Server send object back to client
+8. Sockets disconnect
+
+QUESTION: what is the "mask" in service_connection(key, mask)?
+
+
+Steps:
+1. create sock
+2. connect sock
+3. create events
+4. register events and sock with the register
+
+Per [https://pythonprogramming.net/pickle-objects-sockets-tutorial-python-3/],
+we can just pinky-swear that the first so many characters will be a "fixed header".
+The fixed-header can denote the length of the variable header.  The variable 
+header will contian information about the 
+
+

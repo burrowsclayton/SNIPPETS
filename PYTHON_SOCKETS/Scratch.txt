@@ -1,0 +1,8 @@
+
+
+What design do I want to use?
+1: Fixed header
+2: Variable header
+3: Object
+
+Set up sockets to send and recieve the objects.
