@@ -1,0 +1,7 @@
+
+Create a gist: https://hub.github.com/hub-gist.1.html
+hub gist create [-oc] [--public] [FILES...]
+hub gist show ID [FILENAME]
+
+
+
